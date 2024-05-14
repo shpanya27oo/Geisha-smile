@@ -1,0 +1,191 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #04030F);
+}
+
+
+
+.title img {
+  width: 80px;
+  height: auto;
+  text-align: center;
+  font-size: 48px;
+  color: #04030F;
+  margin-top: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #7e7e7e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 30px;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+/* Стили для бургер-кнопки */
+.burger-button {
+  display: none; /* Скрыть кнопку на больших экранах */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: auto; /* Расположить кнопку справа */
+}
+
+
+
+
+
+
+.footer {
+  height: 60px;
+  background-color: #04030F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title img {
+  width: 80px;
+  height: auto;
+}
+
+.stih {
+  align-content: center;
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-left: 10vw;
+  margin-top: 70px;
+}
+
+.abz1 p, .abz2 p {
+  font-size: 30px;
+  width: 30vw;
+  text-align: center;
+}
+
+.photos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photos img{
+  flex: 1;
+  width: 30vw;
+  margin: 10px;
+}
+#scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #242C30;
+  color: #f3f2e0;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#scrollToTopButton:hover {
+  background-color: #555;
+}
+#scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #242C30;
+  color: #f3f2e0;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#scrollToTopButton:hover {
+  background-color: #555;
+}
+
+
+/* Показать кнопку только на маленьких экранах */
+@media screen and (max-width: 768px) {
+  .burger-button {
+    display: block;
+    margin-right: 10%;
+  }
+  .nav {
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: flex-start; /* Выравнивание элементов по левому краю */
+    height: auto; /* Автоматическая высота */
+  }
+  .nav a {
+    display: none; /* Скрыть ссылки */
+  }
+  .nav.show-menu a {
+    display: block; /* Показать ссылки при активном классе show-menu */
+    margin: 10px 0; /* Отступы для ссылок */
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .photos {
+    display: block;
+  }
+
+  .photos img {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  
+  .stih {
+    flex-direction: column;
+  }
+  .stih p {
+    width: 100%;
+  }
+}

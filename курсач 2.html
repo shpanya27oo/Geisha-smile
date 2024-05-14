@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Курсвая работа</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="title">
+      <img src="img/img.jpg">
+      <h1>Суши-ресторан Geisha smile</h1> 
+    </div>
+    <div class="nav">
+      <a href="курсач 2.html">Выгодные предложения</a>
+      <a href="главная.html">Главная</a>
+      <a href="о нас.html">О нас</a>
+      <a href="контакты.html">Контакты</a>
+      <button class="burger-button" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <div class="main">
+      <div class="card">
+        <div class="image-container">
+        <img src="/img/a.jpg" alt="Сет 1">
+        <h3>Острый сет</h3>
+        </div>
+        <p>955 гр. / 29,50 руб.</p>
+        <button class="add-to-cart" onclick="addToCart('Острый сет', 29.50)">Заказать</button>
+      </div>
+      <div class="card">
+        <div class="image-container">
+        <img src="/img/b.jpg" alt="Сет 2">
+        <h3>Любимый сет</h3>
+        </div>
+        <p>1050гр. / 35,45 руб.</p>
+        <button class="add-to-cart" onclick="addToCart('юбимый сет', 35.45)">Заказать</button>
+      </div>
+      <div class="card">
+        <div class="image-container">
+        <img src="/img/c.jpg" alt="Сет 3">
+        <h3>Сет без рыбы</h3>
+        </div>
+        <p>995,50 гр. / 31,55 руб.</p>
+        <button class="add-to-cart" onclick="addToCart('Сет без рыбы', 31.55)">Заказать</button>
+      </div>
+      <div class="card">
+        <div class="image-container">
+        <img src="/img/d.jpg" alt="Сет 4">
+        <h3>Можно всё!</h3>
+        </div>
+        <p>1400 гр. / 33 руб.</p>
+        <button class="add-to-cart" onclick="addToCart('Можно всё!', 33.00)">Заказать</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="card">
+        <div class="image-container">
+        <img src="/img/e.jpg" alt="Сет 5">
+        <h3>Сет сенсей</h3>
+        </div>
+        <p>1250 гр. / 36,35 руб.</p>
+        <button class="add-to-cart" onclick="addToCart('Сет сенсей', 36.35)">Заказать</button>
+      </div>
+      <div class="card">
+        <div class="image-container">
+        <img src="/img/f.jpg" alt="Сет 6">
+        <h3>Муж купил</h3>
+        </div>
+        <p>1400 гр. / 41,50 руб.</p>
+        <button class="add-to-cart" onclick="addToCart('Муж купил', 41.50)">Заказать</button>
+      </div>
+      <div class="card">
+        <div class="image-container">
+        <img src="/img/g.jpg" alt="Сет 7">
+        <h3>Андрей доплатит сет</h3>
+        </div>
+        <p>1250 гр. / 38.50 руб.</p>
+        <button class="add-to-cart" onclick="addToCart('Сет сенсей', 38.50)">Заказать</button>
+      </div>
+      <div class="card">
+        <div class="image-container">
+        <img src="/img/h.jpg" alt="Сет 8">
+        <h3>Не только для тебя</h3>
+        </div>
+        <p>900 гр. / 37.25 руб.</p>
+        <button class="add-to-cart" onclick="addToCart('Муж купил', 37.25)">Заказать</button>
+      </div>
+      
+    </div>
+    <button class="korzina" onclick="showCart()">Корзина</button>
+    
+    
+    <!-- Всплывающее окно "Корзина" -->
+    <div class="overlay" id="cartOverlay">
+      <div class="modal">
+        <h2>Корзина</h2>
+        <ul id="cartItems"></ul>
+        <p>Итоговая сумма: <span id="totalPrice">0</span> руб.</p>
+        <button onclick="buy()">Оформить заказ</button>
+        <button onclick="clearCart()">Очистить корзину</button>
+        <button onclick="closeCart()">Закрыть</button>
+      </div>
+    </div>
+    <script defer src="/js/script.js"></script>
+    
+    <button onclick="topFunction()" id="scrollToTopButton" title="Наверх">
+      <svg fill="#ffffff" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <path
+              d="M0.256 23.481c0 0.269 0.106 0.544 0.313 0.75 0.412 0.413 1.087 0.413 1.5 0l14.119-14.119 13.913 13.912c0.413 0.413 1.087 0.413 1.5 0s0.413-1.087 0-1.5l-14.663-14.669c-0.413-0.412-1.088-0.412-1.5 0l-14.869 14.869c-0.213 0.212-0.313 0.481-0.313 0.756z">
+          </path>
+      </svg>
+  </button>
+  </div>
+  <div class="footer">
+    <p>© 2024 Geisha smile. Все права защищены.</p>
+  </div>
+  
+</body>
+</html>
+
+    
